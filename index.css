@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.container {
+    perspective: 1200px; /* Añade profundidad para la animación 3D */
+    text-align: center;
+}
+
+.text {
+    font-size: 48px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: white; /* Color del texto */
+    text-shadow: 3px 3px 5px red; /* Sombra roja para hacer el texto más visible */
+    animation: rotate 10s infinite linear; /* Aplicamos la animación de rotación */
+}
+
+@keyframes rotate {
+    0% { transform: rotateY(0deg); }  /* Empieza sin rotación */
+    100% { transform: rotateY(360deg); } /* Completa un giro completo en 360 grados */
+}
